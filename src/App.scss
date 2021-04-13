@@ -1,0 +1,119 @@
+$main-font: Verdana, Geneva, sans-serif;
+
+* {
+    font-family: $main-font;
+}
+
+body {
+    background:linear-gradient(to top,rgba(59,201,205,1) 0,rgba(51,153,204,1) 100%);
+}
+
+.main-container {
+    padding: 50px 0px;
+    background:white;
+    max-width:800px;
+    padding:20px;
+    margin-top:50px;
+    margin-bottom:50px;
+    border-radius:20px;
+    box-shadow:1px 1px 8px black;
+}
+
+.logo {
+    max-width:300px;
+    height:auto;
+}
+
+.field-wrapper {
+    margin-bottom:40px;
+}
+
+
+label {
+    display:block !important;
+    font-weight:bold;
+}
+
+input {
+    display:block;
+    margin-top:10px;
+}
+
+input[type="text"], select {
+    padding:10px;
+    min-width:300px;
+    margin-bottom:10px;
+}
+
+.required:after {
+    content:" *";
+    color: red;
+}
+
+input.required {
+    position:relative;
+    &:before {
+        content:'*';
+        color: red;
+        position:absolute;
+        left:-10px;
+        top:-2px;
+    }
+    &:after {
+        content:'';
+    }
+}
+
+input[type='date'] {
+    margin-bottom:10px;
+}
+
+.newAppContainer, .appRebrandContainer {
+    margin-top:20px;
+    h5 {
+        text-align: center;
+        margin-bottom:50px;
+    }
+    .date-pickers-wrapper {
+        display:flex;
+        justify-content: space-evenly;
+        .date-wrapper {
+            input {
+                min-width:100px;
+            }
+        }
+    }
+}
+
+#client-aware {
+    display:inline-block;
+    margin-top:40px;
+}
+
+.error-clientday {
+    display:block;
+    text-align: center;
+    color:red;
+}
+
+.error-kickofday {
+    padding:20px;
+    max-width:500px;
+    margin:20px auto;
+    border:1px solid black;
+    #less-five-weeks-conf {
+        display:inline-block;
+    }
+
+}
+
+.rebrand-error-message {
+    text-align: center;
+    color:red;
+}
+
+.button-wrapper {
+    display:flex;
+    justify-content: center;
+
+}
